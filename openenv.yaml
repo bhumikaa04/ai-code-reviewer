@@ -1,0 +1,16 @@
+name: "Bhumika-Code-Repair-Env"
+version: "1.0.0"
+description: "A reinforcement learning environment for fixing Python code bugs (Syntax, Security, Logic)."
+entry_point: "env.code_env:CodeEnvironment"
+env_config:
+  max_steps: 5
+tasks:
+  - id: "easy-syntax"
+    difficulty: "easy"
+    description: "Fix a missing colon or indentation in a simple function."
+  - id: "medium-logic"
+    difficulty: "medium"
+    description: "Correct a loop that doesn't return the sum of a list."
+  - id: "hard-security"
+    difficulty: "hard"
+    description: "Replace dangerous eval() calls with safe execution logic."
